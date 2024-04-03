@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "DC2F793F-8BCA-4705-9E39-918395625D5E"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "575C39C4-72EB-4DE8-92D2-27600004D5D3"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "TVShow/ViewModel/TVShowViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "32"
+            endingLineNumber = "32"
+            landmarkName = "getDetail(seriesID:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "575C39C4-72EB-4DE8-92D2-27600004D5D3 - 9fc1182b80e6803b"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(3) suspend resume partial function for TVShow.TVShowViewModel.getDetail(showID: Swift.Int) async -&gt; ()"
+                  moduleName = "TVShow"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/alisyed/Desktop/Ali%20Docs/TVShowDetail/TVShow/TVShow/ViewModel/TVShowViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "33"
+                  endingLineNumber = "33"
+                  offsetFromSymbolStart = "8104">
+               </Location>
+               <Location
+                  uuid = "575C39C4-72EB-4DE8-92D2-27600004D5D3 - 9fc1182b80e6803b"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(3) suspend resume partial function for TVShow.TVShowViewModel.getDetail(showID: Swift.Int) async -&gt; ()"
+                  moduleName = "TVShow"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/alisyed/Desktop/Ali%20Docs/TVShowDetail/TVShow/TVShow/ViewModel/TVShowViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "33"
+                  endingLineNumber = "33"
+                  offsetFromSymbolStart = "7680">
+               </Location>
+               <Location
+                  uuid = "575C39C4-72EB-4DE8-92D2-27600004D5D3 - 9fc1182b80e6803b"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(3) suspend resume partial function for TVShow.TVShowViewModel.getDetail(showID: Swift.Int) async -&gt; ()"
+                  moduleName = "TVShow"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/alisyed/Desktop/Ali%20Docs/TVShowDetail/TVShow/TVShow/ViewModel/TVShowViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "33"
+                  endingLineNumber = "33"
+                  offsetFromSymbolStart = "7768">
+               </Location>
+               <Location
+                  uuid = "575C39C4-72EB-4DE8-92D2-27600004D5D3 - 9fc1182b80e6803b"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(3) suspend resume partial function for TVShow.TVShowViewModel.getDetail(showID: Swift.Int) async -&gt; ()"
+                  moduleName = "TVShow"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/alisyed/Desktop/Ali%20Docs/TVShowDetail/TVShow/TVShow/ViewModel/TVShowViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "33"
+                  endingLineNumber = "33"
+                  offsetFromSymbolStart = "7744">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "124C079E-6586-4224-B6B2-0524B0529D81"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "TVShow/ViewModel/TVShowViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "24"
+            endingLineNumber = "24"
+            landmarkName = "getDetail(seriesID:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "124C079E-6586-4224-B6B2-0524B0529D81 - 9fc1182b80e68344"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(3) suspend resume partial function for TVShow.TVShowViewModel.getDetail(showID: Swift.Int) async -&gt; ()"
+                  moduleName = "TVShow"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/alisyed/Desktop/Ali%20Docs/TVShowDetail/TVShow/TVShow/ViewModel/TVShowViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "26"
+                  endingLineNumber = "26"
+                  offsetFromSymbolStart = "1336">
+               </Location>
+               <Location
+                  uuid = "124C079E-6586-4224-B6B2-0524B0529D81 - 9fc1182b80e68344"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(3) suspend resume partial function for TVShow.TVShowViewModel.getDetail(showID: Swift.Int) async -&gt; ()"
+                  moduleName = "TVShow"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/alisyed/Desktop/Ali%20Docs/TVShowDetail/TVShow/TVShow/ViewModel/TVShowViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "26"
+                  endingLineNumber = "26"
+                  offsetFromSymbolStart = "1388">
+               </Location>
+               <Location
+                  uuid = "124C079E-6586-4224-B6B2-0524B0529D81 - 9fc1182b80e68344"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(3) suspend resume partial function for TVShow.TVShowViewModel.getDetail(showID: Swift.Int) async -&gt; ()"
+                  moduleName = "TVShow"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/alisyed/Desktop/Ali%20Docs/TVShowDetail/TVShow/TVShow/ViewModel/TVShowViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "26"
+                  endingLineNumber = "26"
+                  offsetFromSymbolStart = "1304">
+               </Location>
+               <Location
+                  uuid = "124C079E-6586-4224-B6B2-0524B0529D81 - 9fc1182b80e68344"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(3) suspend resume partial function for TVShow.TVShowViewModel.getDetail(showID: Swift.Int) async -&gt; ()"
+                  moduleName = "TVShow"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/alisyed/Desktop/Ali%20Docs/TVShowDetail/TVShow/TVShow/ViewModel/TVShowViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "26"
+                  endingLineNumber = "26"
+                  offsetFromSymbolStart = "1424">
+               </Location>
+               <Location
+                  uuid = "124C079E-6586-4224-B6B2-0524B0529D81 - 9fc1182b80e68344"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(3) suspend resume partial function for TVShow.TVShowViewModel.getDetail(showID: Swift.Int) async -&gt; ()"
+                  moduleName = "TVShow"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/alisyed/Desktop/Ali%20Docs/TVShowDetail/TVShow/TVShow/ViewModel/TVShowViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "26"
+                  endingLineNumber = "26"
+                  offsetFromSymbolStart = "1352">
+               </Location>
+               <Location
+                  uuid = "124C079E-6586-4224-B6B2-0524B0529D81 - 9fc1182b80e68344"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(3) suspend resume partial function for TVShow.TVShowViewModel.getDetail(showID: Swift.Int) async -&gt; ()"
+                  moduleName = "TVShow"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/alisyed/Desktop/Ali%20Docs/TVShowDetail/TVShow/TVShow/ViewModel/TVShowViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "26"
+                  endingLineNumber = "26"
+                  offsetFromSymbolStart = "1404">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
