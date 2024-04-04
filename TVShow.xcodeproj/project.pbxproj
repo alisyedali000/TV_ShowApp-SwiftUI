@@ -21,6 +21,15 @@
 		016798762BBDA61900E54077 /* TVShowDetailModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 016798752BBDA61900E54077 /* TVShowDetailModel.swift */; };
 		016798782BBDA65A00E54077 /* TVShowViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 016798772BBDA65A00E54077 /* TVShowViewModel.swift */; };
 		0167987A2BBDAAD100E54077 /* TVShowEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 016798792BBDAAD100E54077 /* TVShowEndpoint.swift */; };
+		01A4977D2BBEEFD20015AD19 /* SeasonDetailModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01A4977C2BBEEFD20015AD19 /* SeasonDetailModel.swift */; };
+		01A4977F2BBEF4420015AD19 /* EpisodeDetailModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01A4977E2BBEF4420015AD19 /* EpisodeDetailModel.swift */; };
+		01A497832BBEF6460015AD19 /* AsyncImages.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01A497822BBEF6460015AD19 /* AsyncImages.swift */; };
+		01A497862BBEF6C90015AD19 /* SDWebImageSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = 01A497852BBEF6C90015AD19 /* SDWebImageSwiftUI */; };
+		01A497892BBEFF990015AD19 /* Background.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01A497882BBEFF990015AD19 /* Background.swift */; };
+		01A497902BBF055F0015AD19 /* RectangularPlayButtons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01A4978F2BBF055F0015AD19 /* RectangularPlayButtons.swift */; };
+		01A497922BBF12A00015AD19 /* CircularButtonWithSubLine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01A497912BBF12A00015AD19 /* CircularButtonWithSubLine.swift */; };
+		01A497972BBF17D10015AD19 /* ExpandableText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01A497962BBF17D10015AD19 /* ExpandableText.swift */; };
+		01A4979A2BBF1BCF0015AD19 /* LoaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01A497992BBF1BCF0015AD19 /* LoaderView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +67,14 @@
 		016798752BBDA61900E54077 /* TVShowDetailModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TVShowDetailModel.swift; sourceTree = "<group>"; };
 		016798772BBDA65A00E54077 /* TVShowViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TVShowViewModel.swift; sourceTree = "<group>"; };
 		016798792BBDAAD100E54077 /* TVShowEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TVShowEndpoint.swift; sourceTree = "<group>"; };
+		01A4977C2BBEEFD20015AD19 /* SeasonDetailModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeasonDetailModel.swift; sourceTree = "<group>"; };
+		01A4977E2BBEF4420015AD19 /* EpisodeDetailModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EpisodeDetailModel.swift; sourceTree = "<group>"; };
+		01A497822BBEF6460015AD19 /* AsyncImages.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsyncImages.swift; sourceTree = "<group>"; };
+		01A497882BBEFF990015AD19 /* Background.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Background.swift; sourceTree = "<group>"; };
+		01A4978F2BBF055F0015AD19 /* RectangularPlayButtons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RectangularPlayButtons.swift; sourceTree = "<group>"; };
+		01A497912BBF12A00015AD19 /* CircularButtonWithSubLine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircularButtonWithSubLine.swift; sourceTree = "<group>"; };
+		01A497962BBF17D10015AD19 /* ExpandableText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpandableText.swift; sourceTree = "<group>"; };
+		01A497992BBF1BCF0015AD19 /* LoaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoaderView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +82,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				01A497862BBEF6C90015AD19 /* SDWebImageSwiftUI in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -108,8 +126,8 @@
 		016798382BBD9D9200E54077 /* TVShow */ = {
 			isa = PBXGroup;
 			children = (
-				016798662BBD9DD500E54077 /* EndPoints */,
-				016798652BBD9DCA00E54077 /* ViewModel */,
+				01A497802BBEF62E0015AD19 /* CustomViewsAndModifiers */,
+				01A4977A2BBEEFA00015AD19 /* Shared */,
 				016798642BBD9DC200E54077 /* Models */,
 				0167986D2BBD9F1D00E54077 /* View */,
 				016798632BBD9DAE00E54077 /* NetworkManager */,
@@ -158,6 +176,8 @@
 		016798642BBD9DC200E54077 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				01A497792BBEEF870015AD19 /* EpisodeDetailModel */,
+				01A497782BBEEF730015AD19 /* SeasonDetailModel */,
 				016798742BBDA5F700E54077 /* TVShowDetailModel */,
 			);
 			path = Models;
@@ -212,6 +232,84 @@
 			path = TVShowDetailModel;
 			sourceTree = "<group>";
 		};
+		01A497782BBEEF730015AD19 /* SeasonDetailModel */ = {
+			isa = PBXGroup;
+			children = (
+				01A4977C2BBEEFD20015AD19 /* SeasonDetailModel.swift */,
+			);
+			path = SeasonDetailModel;
+			sourceTree = "<group>";
+		};
+		01A497792BBEEF870015AD19 /* EpisodeDetailModel */ = {
+			isa = PBXGroup;
+			children = (
+				01A4977E2BBEF4420015AD19 /* EpisodeDetailModel.swift */,
+			);
+			path = EpisodeDetailModel;
+			sourceTree = "<group>";
+		};
+		01A4977A2BBEEFA00015AD19 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				016798652BBD9DCA00E54077 /* ViewModel */,
+				016798662BBD9DD500E54077 /* EndPoints */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		01A497802BBEF62E0015AD19 /* CustomViewsAndModifiers */ = {
+			isa = PBXGroup;
+			children = (
+				01A497982BBF1BC00015AD19 /* Loader */,
+				01A497932BBF17A30015AD19 /* Text */,
+				01A4978A2BBF04B10015AD19 /* Buttons */,
+				01A497872BBEFF830015AD19 /* BackgroundModifier */,
+				01A497812BBEF6360015AD19 /* AsyncImages */,
+			);
+			path = CustomViewsAndModifiers;
+			sourceTree = "<group>";
+		};
+		01A497812BBEF6360015AD19 /* AsyncImages */ = {
+			isa = PBXGroup;
+			children = (
+				01A497822BBEF6460015AD19 /* AsyncImages.swift */,
+			);
+			path = AsyncImages;
+			sourceTree = "<group>";
+		};
+		01A497872BBEFF830015AD19 /* BackgroundModifier */ = {
+			isa = PBXGroup;
+			children = (
+				01A497882BBEFF990015AD19 /* Background.swift */,
+			);
+			path = BackgroundModifier;
+			sourceTree = "<group>";
+		};
+		01A4978A2BBF04B10015AD19 /* Buttons */ = {
+			isa = PBXGroup;
+			children = (
+				01A4978F2BBF055F0015AD19 /* RectangularPlayButtons.swift */,
+				01A497912BBF12A00015AD19 /* CircularButtonWithSubLine.swift */,
+			);
+			path = Buttons;
+			sourceTree = "<group>";
+		};
+		01A497932BBF17A30015AD19 /* Text */ = {
+			isa = PBXGroup;
+			children = (
+				01A497962BBF17D10015AD19 /* ExpandableText.swift */,
+			);
+			path = Text;
+			sourceTree = "<group>";
+		};
+		01A497982BBF1BC00015AD19 /* Loader */ = {
+			isa = PBXGroup;
+			children = (
+				01A497992BBF1BCF0015AD19 /* LoaderView.swift */,
+			);
+			path = Loader;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -228,6 +326,9 @@
 			dependencies = (
 			);
 			name = TVShow;
+			packageProductDependencies = (
+				01A497852BBEF6C90015AD19 /* SDWebImageSwiftUI */,
+			);
 			productName = TVShow;
 			productReference = 016798362BBD9D9200E54077 /* TVShow.app */;
 			productType = "com.apple.product-type.application";
@@ -300,6 +401,9 @@
 				Base,
 			);
 			mainGroup = 0167982D2BBD9D9200E54077;
+			packageReferences = (
+				01A497842BBEF6C90015AD19 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */,
+			);
 			productRefGroup = 016798372BBD9D9200E54077 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -342,14 +446,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				01A497832BBEF6460015AD19 /* AsyncImages.swift in Sources */,
 				016798732BBD9FA800E54077 /* GenericResponse.swift in Sources */,
+				01A4977D2BBEEFD20015AD19 /* SeasonDetailModel.swift in Sources */,
 				0167983C2BBD9D9200E54077 /* ContentView.swift in Sources */,
+				01A497902BBF055F0015AD19 /* RectangularPlayButtons.swift in Sources */,
 				0167983A2BBD9D9200E54077 /* TVShowApp.swift in Sources */,
 				016798762BBDA61900E54077 /* TVShowDetailModel.swift in Sources */,
+				01A497922BBF12A00015AD19 /* CircularButtonWithSubLine.swift in Sources */,
+				01A497972BBF17D10015AD19 /* ExpandableText.swift in Sources */,
 				0167986A2BBD9E7100E54077 /* API_Manager.swift in Sources */,
 				016798712BBD9F6100E54077 /* TVShow.swift in Sources */,
+				01A4977F2BBEF4420015AD19 /* EpisodeDetailModel.swift in Sources */,
 				0167986C2BBD9EA700E54077 /* AppURL.swift in Sources */,
 				0167987A2BBDAAD100E54077 /* TVShowEndpoint.swift in Sources */,
+				01A4979A2BBF1BCF0015AD19 /* LoaderView.swift in Sources */,
+				01A497892BBEFF990015AD19 /* Background.swift in Sources */,
 				016798782BBDA65A00E54077 /* TVShowViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -680,6 +792,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		01A497842BBEF6C90015AD19 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SDWebImage/SDWebImageSwiftUI.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		01A497852BBEF6C90015AD19 /* SDWebImageSwiftUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 01A497842BBEF6C90015AD19 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */;
+			productName = SDWebImageSwiftUI;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 0167982E2BBD9D9200E54077 /* Project object */;
 }

@@ -12,6 +12,7 @@ enum AppUrl {
     static var SCHEME = "https"
     static var BASEURL = "api.themoviedb.org"
     static var APIPATCH = "/3"
+    static var IMAGEURL = "https://image.tmdb.org/t/p/original"
 
 }
 

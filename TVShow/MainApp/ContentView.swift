@@ -9,19 +9,10 @@ import SwiftUI
 
 struct ContentView: View {
     
-    @StateObject var vm = TVShowViewModel()
-    
     var body: some View {
-        VStack {
-            
-            Text("\(vm.tvShowDetail.originalName ?? "")")
-            
-        }.task {
-            
-            await vm.getEpisodeDetails(seriesID: 62852, seasonNumber: 1, episodeNumber: 1)
-            
-        }
-        .padding()
+        
+        TVShow()
+        
     }
 }
 
