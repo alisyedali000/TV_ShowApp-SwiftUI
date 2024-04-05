@@ -27,6 +27,18 @@ struct SeasonDetailModel: Codable, Hashable {
         case voteAverage = "vote_average"
     }
     
+    
+    init(id: String?, airDate: String?, episodes: [EpisodeDetailModel]?, name: String?, overview: String?, welcomeID: Int?, posterPath: String?, seasonNumber: Int?, voteAverage: Double?) {
+        self.id = id
+        self.airDate = airDate
+        self.episodes = episodes
+        self.name = name
+        self.overview = overview
+        self.welcomeID = welcomeID
+        self.posterPath = posterPath
+        self.seasonNumber = seasonNumber
+        self.voteAverage = voteAverage
+    }
     init() {
         self.id = nil
         self.airDate = nil
@@ -41,20 +53,17 @@ struct SeasonDetailModel: Codable, Hashable {
 }
 
 
-
-//enum Department: String, Codable {
-//    case acting = "Acting"
-//    case art = "Art"
-//    case camera = "Camera"
-//    case costumeMakeUp = "Costume & Make-Up"
-//    case crew = "Crew"
-//    case directing = "Directing"
-//    case editing = "Editing"
-//    case production = "Production"
-//    case writing = "Writing"
-//}
-
-//enum EpisodeType: String, Codable {
-//    case finale = "finale"
-//    case standard = "standard"
-//}
+let dummySeason = SeasonDetailModel(
+    id: "1",
+    airDate: "2023-01-01",
+    episodes: [
+        dummyEpisode
+        // Add more episodes if needed
+    ],
+    name: "Season 1",
+    overview: "Overview of Season 1",
+    welcomeID: 1,
+    posterPath: "/dummyPosterPath.jpg",
+    seasonNumber: 1,
+    voteAverage: 8.0
+)

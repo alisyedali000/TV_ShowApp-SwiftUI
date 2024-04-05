@@ -39,3 +39,41 @@ struct MainPosterImage: View {
 
     }
 }
+
+
+struct EpisodePosterImage: View {
+    let url: String
+    var width : CGFloat = 150
+    var height : CGFloat = 90
+    var body: some View {
+
+        WebImage(url: URL(string: AppUrl.IMAGEURL + (url))!)
+            .resizable()
+            .placeholder(Image("placeholder.png"))
+            .indicator(.activity)
+            .scaledToFill()
+            .frame(width: width, height: height)
+            .clipped()
+            .contentShape(Rectangle())
+            .overlay(
+                
+               Rectangle()
+                .foregroundStyle(Color.black.opacity(0.5))
+                
+                .overlay(
+                
+                Circle()
+                    .frame(height: 50)
+                    .foregroundStyle(Color.black.opacity(0.4))
+                    .overlay(
+                        
+                        Image(systemName: "play")
+                            .foregroundStyle(Color.white)
+                    )
+                )
+            )
+//            .ignoresSafeArea()
+          
+
+    }
+}

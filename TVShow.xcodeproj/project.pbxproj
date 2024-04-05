@@ -30,6 +30,8 @@
 		01A497922BBF12A00015AD19 /* CircularButtonWithSubLine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01A497912BBF12A00015AD19 /* CircularButtonWithSubLine.swift */; };
 		01A497972BBF17D10015AD19 /* ExpandableText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01A497962BBF17D10015AD19 /* ExpandableText.swift */; };
 		01A4979A2BBF1BCF0015AD19 /* LoaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01A497992BBF1BCF0015AD19 /* LoaderView.swift */; };
+		01D94F1E2BC0406400895DA1 /* SeasonsDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01D94F1D2BC0406400895DA1 /* SeasonsDetailView.swift */; };
+		01D94F212BC0655000895DA1 /* EpisodeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01D94F202BC0655000895DA1 /* EpisodeCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -75,6 +77,8 @@
 		01A497912BBF12A00015AD19 /* CircularButtonWithSubLine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircularButtonWithSubLine.swift; sourceTree = "<group>"; };
 		01A497962BBF17D10015AD19 /* ExpandableText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpandableText.swift; sourceTree = "<group>"; };
 		01A497992BBF1BCF0015AD19 /* LoaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoaderView.swift; sourceTree = "<group>"; };
+		01D94F1D2BC0406400895DA1 /* SeasonsDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeasonsDetailView.swift; sourceTree = "<group>"; };
+		01D94F202BC0655000895DA1 /* EpisodeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EpisodeCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -220,6 +224,7 @@
 			isa = PBXGroup;
 			children = (
 				016798702BBD9F6100E54077 /* TVShow.swift */,
+				01D94F1D2BC0406400895DA1 /* SeasonsDetailView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -260,6 +265,7 @@
 		01A497802BBEF62E0015AD19 /* CustomViewsAndModifiers */ = {
 			isa = PBXGroup;
 			children = (
+				01D94F1F2BC0650F00895DA1 /* EpisodeCell */,
 				01A497982BBF1BC00015AD19 /* Loader */,
 				01A497932BBF17A30015AD19 /* Text */,
 				01A4978A2BBF04B10015AD19 /* Buttons */,
@@ -308,6 +314,14 @@
 				01A497992BBF1BCF0015AD19 /* LoaderView.swift */,
 			);
 			path = Loader;
+			sourceTree = "<group>";
+		};
+		01D94F1F2BC0650F00895DA1 /* EpisodeCell */ = {
+			isa = PBXGroup;
+			children = (
+				01D94F202BC0655000895DA1 /* EpisodeCell.swift */,
+			);
+			path = EpisodeCell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -456,8 +470,10 @@
 				01A497922BBF12A00015AD19 /* CircularButtonWithSubLine.swift in Sources */,
 				01A497972BBF17D10015AD19 /* ExpandableText.swift in Sources */,
 				0167986A2BBD9E7100E54077 /* API_Manager.swift in Sources */,
+				01D94F212BC0655000895DA1 /* EpisodeCell.swift in Sources */,
 				016798712BBD9F6100E54077 /* TVShow.swift in Sources */,
 				01A4977F2BBEF4420015AD19 /* EpisodeDetailModel.swift in Sources */,
+				01D94F1E2BC0406400895DA1 /* SeasonsDetailView.swift in Sources */,
 				0167986C2BBD9EA700E54077 /* AppURL.swift in Sources */,
 				0167987A2BBDAAD100E54077 /* TVShowEndpoint.swift in Sources */,
 				01A4979A2BBF1BCF0015AD19 /* LoaderView.swift in Sources */,

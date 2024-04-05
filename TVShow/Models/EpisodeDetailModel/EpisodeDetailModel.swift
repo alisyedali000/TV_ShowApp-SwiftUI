@@ -35,6 +35,24 @@ struct EpisodeDetailModel: Codable, Hashable {
         case guestStars = "guest_stars"
     }
     
+    init(airDate: String?, episodeNumber: Int?, episodeType: String?, id: Int?, name: String?, overview: String?, productionCode: String?, runtime: Int?, seasonNumber: Int?, showID: Int?, stillPath: String?, voteAverage: Double?, voteCount: Int?, crew: [Crew]?, guestStars: [Crew]?) {
+        self.airDate = airDate
+        self.episodeNumber = episodeNumber
+        self.episodeType = episodeType
+        self.id = id
+        self.name = name
+        self.overview = overview
+        self.productionCode = productionCode
+        self.runtime = runtime
+        self.seasonNumber = seasonNumber
+        self.showID = showID
+        self.stillPath = stillPath
+        self.voteAverage = voteAverage
+        self.voteCount = voteCount
+        self.crew = crew
+        self.guestStars = guestStars
+    }
+    
     init() {
         self.airDate = nil
         self.episodeNumber = nil
@@ -82,3 +100,28 @@ struct Crew: Codable, Hashable {
     }
     
 }
+
+
+let dummyEpisode = EpisodeDetailModel(
+    airDate: "2023-01-01",
+    episodeNumber: 1,
+    episodeType: "Regular",
+    id: 1,
+    name: "Episode 1",
+    overview: "Overview of Episode 1",
+    productionCode: "ABC123",
+    runtime: 45,
+    seasonNumber: 1,
+    showID: 123456,
+    stillPath: "/dummyStillPath.jpg",
+    voteAverage: 8.0,
+    voteCount: 100,
+    crew: [
+        Crew(job: "Director", department: "Directing", creditID: "123", adult: false, gender: 2, id: 1, knownForDepartment: "Directing", name: "Director Name", originalName: "Original Director Name", popularity: 7.5, profilePath: "/dummyDirectorProfilePath.jpg", character: nil, order: nil)
+        // Add more crew members if needed
+    ],
+    guestStars: [
+        Crew(job: "Actor", department: "Acting", creditID: "456", adult: false, gender: 2, id: 2, knownForDepartment: "Acting", name: "Actor Name", originalName: "Original Actor Name", popularity: 8.0, profilePath: "/dummyActorProfilePath.jpg", character: "Character Name", order: 1)
+        // Add more guest stars if needed
+    ]
+)

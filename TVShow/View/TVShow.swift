@@ -21,7 +21,9 @@ struct TVShow: View {
         }.addBackground
         
         .task {
-            await vm.getDetail(seriesID: 628)
+            
+            await vm.getDetail(seriesID: 62852)
+            
         }
     }
     
@@ -41,6 +43,7 @@ extension TVShow{
                     MainPosterImage(url: vm.tvShowDetail.backdropPath ?? "")
                     
                     VStack(alignment : .leading, spacing: 10){
+                        
                         seriesName
                         
                         totalSeasons
@@ -51,7 +54,14 @@ extension TVShow{
                         
                         circularButtons
                         
+             
+                        
                     }.padding(.horizontal)
+                    
+                    
+                    SeasonsDetailView(tvShow: $vm.tvShowDetail)
+                        .padding(.vertical)
+                    
                 }
                 
             }.ignoresSafeArea(.all)
@@ -120,7 +130,6 @@ extension TVShow{
             
             CircularButtonWithSubLine(subLine: "I like it", image: Image(systemName: "hand.thumbsup"))
             
-      
             
             CircularButtonWithSubLine(subLine: "I don't like", image: Image(systemName: "hand.thumbsdown"))
             
@@ -144,6 +153,7 @@ extension TVShow{
 //    }
     
 }
+
 
 #Preview {
     TVShow()

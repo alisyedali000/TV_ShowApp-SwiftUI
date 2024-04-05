@@ -190,53 +190,5 @@
             </Locations>
          </BreakpointContent>
       </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "D69899FA-DB5E-443C-A20D-4B66831EC176"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "TVShow/View/TVShow.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "19"
-            endingLineNumber = "19"
-            landmarkName = "body"
-            landmarkType = "24">
-            <Locations>
-               <Location
-                  uuid = "D69899FA-DB5E-443C-A20D-4B66831EC176 - cd03c22b964ea95d"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 () -&gt; SwiftUI.TupleView&lt;(&lt;&lt;opaque return type of TVShow.TVShow.screenView() -&gt; some&gt;&gt;.0, TVShow.LoaderView)&gt; in TVShow.TVShow.body.getter : some"
-                  moduleName = "TVShow"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/alisyed/Desktop/Ali%20Docs/TVShowDetail/TVShow/TVShow/View/TVShow.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "19"
-                  endingLineNumber = "19"
-                  offsetFromSymbolStart = "288">
-               </Location>
-               <Location
-                  uuid = "D69899FA-DB5E-443C-A20D-4B66831EC176 - cd03c22b964ea95d"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 () -&gt; SwiftUI.TupleView&lt;(&lt;&lt;opaque return type of TVShow.TVShow.screenView() -&gt; some&gt;&gt;.0, TVShow.LoaderView)&gt; in TVShow.TVShow.body.getter : some"
-                  moduleName = "TVShow"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/alisyed/Desktop/Ali%20Docs/TVShowDetail/TVShow/TVShow/View/TVShow.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "19"
-                  endingLineNumber = "19"
-                  offsetFromSymbolStart = "216">
-               </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
    </Breakpoints>
 </Bucket>

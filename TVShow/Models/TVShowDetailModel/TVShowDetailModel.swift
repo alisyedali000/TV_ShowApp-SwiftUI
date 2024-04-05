@@ -68,6 +68,41 @@ struct TVShowDetailModel: Codable, Hashable {
         case voteCount = "vote_count"
     }
     
+    init(adult: Bool?, backdropPath: String?, createdBy: [CreatedBy]?, episodeRunTime: [Int]?, firstAirDate: String?, genres: [Genre]?, homepage: String?, id: Int?, inProduction: Bool?, languages: [String]?, lastAirDate: String?, lastEpisodeToAir: LastEpisodeToAir?, name: String?, nextEpisodeToAir: JSONNull?, networks: [Network]?, numberOfEpisodes: Int?, numberOfSeasons: Int?, originCountry: [String]?, originalLanguage: String?, originalName: String?, overview: String?, popularity: Double?, posterPath: String?, productionCompanies: [Network]?, productionCountries: [ProductionCountry]?, seasons: [Season]?, spokenLanguages: [SpokenLanguage]?, status: String?, tagline: String?, type: String?, voteAverage: Double?, voteCount: Int?) {
+        self.adult = adult
+        self.backdropPath = backdropPath
+        self.createdBy = createdBy
+        self.episodeRunTime = episodeRunTime
+        self.firstAirDate = firstAirDate
+        self.genres = genres
+        self.homepage = homepage
+        self.id = id
+        self.inProduction = inProduction
+        self.languages = languages
+        self.lastAirDate = lastAirDate
+        self.lastEpisodeToAir = lastEpisodeToAir
+        self.name = name
+        self.nextEpisodeToAir = nextEpisodeToAir
+        self.networks = networks
+        self.numberOfEpisodes = numberOfEpisodes
+        self.numberOfSeasons = numberOfSeasons
+        self.originCountry = originCountry
+        self.originalLanguage = originalLanguage
+        self.originalName = originalName
+        self.overview = overview
+        self.popularity = popularity
+        self.posterPath = posterPath
+        self.productionCompanies = productionCompanies
+        self.productionCountries = productionCountries
+        self.seasons = seasons
+        self.spokenLanguages = spokenLanguages
+        self.status = status
+        self.tagline = tagline
+        self.type = type
+        self.voteAverage = voteAverage
+        self.voteCount = voteCount
+    }
+    
     init() {
         self.adult = nil
         self.backdropPath = nil
@@ -249,6 +284,17 @@ struct Season: Codable, Hashable {
         self.seasonNumber = seasonNumber
         self.voteAverage = voteAverage
     }
+    
+    init() {
+        self.airDate = nil
+        self.episodeCount = nil
+        self.id = nil
+        self.name = nil
+        self.overview = nil
+        self.posterPath = nil
+        self.seasonNumber = nil
+        self.voteAverage = nil
+    }
 }
 
 // MARK: - SpokenLanguage
@@ -294,3 +340,99 @@ class JSONNull: Codable, Hashable {
         try container.encodeNil()
     }
 }
+
+
+let dummyTVShowDetail = TVShowDetailModel(
+        adult: false,
+        backdropPath: "/dummyBackdropPath.jpg",
+        createdBy: [
+            CreatedBy(id: 1, creditID: "123", name: "Dummy Creator", gender: 1, profilePath: "/dummyProfilePath.jpg")
+            // Add more if needed
+        ],
+        episodeRunTime: [60, 45, 30], // Sample episode runtimes
+        firstAirDate: "2022-01-01",
+        genres: [
+            Genre(id: 1, name: "Action"),
+            Genre(id: 2, name: "Adventure")
+            // Add more if needed
+        ],
+        homepage: "https://dummyhomepage.com",
+        id: 123456, // Sample ID
+        inProduction: true,
+        languages: ["English", "Spanish"],
+        lastAirDate: "2023-12-31",
+        lastEpisodeToAir: LastEpisodeToAir(
+            id: 123,
+            name: "Last Episode",
+            overview: "This is the last episode overview",
+            voteAverage: 8,
+            voteCount: 100,
+            airDate: "2023-12-30",
+            episodeNumber: 10,
+            episodeType: "Regular",
+            productionCode: "123ABC",
+            runtime: 45,
+            seasonNumber: 1,
+            showID: 123456,
+            stillPath: "/dummyStillPath.jpg"
+        ),
+        name: "Dummy TV Show",
+        nextEpisodeToAir: JSONNull(),
+        networks: [
+            Network(id: 1, logoPath: "/dummyLogoPath.jpg", name: "Dummy Network", originCountry: "US")
+            // Add more if needed
+        ],
+        numberOfEpisodes: 20,
+        numberOfSeasons: 2,
+        originCountry: ["US", "UK"],
+        originalLanguage: "English",
+        originalName: "Original Dummy TV Show",
+        overview: "This is a dummy TV show overview",
+        popularity: 7.5,
+        posterPath: "/dummyPosterPath.jpg",
+        productionCompanies: [
+            Network(id: 2, logoPath: "/dummyLogoPath2.jpg", name: "Dummy Production Company", originCountry: "US")
+            // Add more if needed
+        ],
+        productionCountries: [
+            ProductionCountry(iso3166_1: "US", name: "United States"),
+            ProductionCountry(iso3166_1: "UK", name: "United Kingdom")
+            // Add more if needed
+        ],
+        seasons: [
+            Season(
+                airDate: "2022-01-01",
+                episodeCount: 10,
+                id: 1,
+                name: "Season 1",
+                overview: "Overview of Season 1",
+                posterPath: "/dummySeasonPosterPath.jpg",
+                seasonNumber: 1,
+                voteAverage: 7.8
+            ),
+            Season(
+                airDate: "2023-01-01",
+                episodeCount: 10,
+                id: 2,
+                name: "Season 2",
+                overview: "Overview of Season 2",
+                posterPath: "/dummySeasonPosterPath2.jpg",
+                seasonNumber: 2,
+                voteAverage: 8.0
+            )
+            // Add more if needed
+        ],
+        spokenLanguages: [
+            SpokenLanguage(englishName: "English", iso639_1: "en", name: "English"),
+            SpokenLanguage(englishName: "Spanish", iso639_1: "es", name: "Spanish")
+            // Add more if needed
+        ],
+        status: "Returning Series",
+        tagline: "Dummy TV Show Tagline",
+        type: "Scripted",
+        voteAverage: 7.9,
+        voteCount: 500
+    )
+
+
+
