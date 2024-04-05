@@ -37,7 +37,7 @@ extension TVShow{
         
         VStack{
             
-            ScrollView{
+            ScrollView(showsIndicators : false){
                 
                 VStack{
                     MainPosterImage(url: vm.tvShowDetail.backdropPath ?? "")

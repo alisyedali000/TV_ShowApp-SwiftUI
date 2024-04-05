@@ -71,7 +71,7 @@ extension SeasonsDetailView {
         
         let seasons = tvShow.seasons ?? []
         
-        return ScrollView(.horizontal) {
+        return ScrollView(.horizontal, showsIndicators: false) {
             
             HStack(spacing: 0) {
                 
