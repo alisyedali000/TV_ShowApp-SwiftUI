@@ -9,15 +9,28 @@ import SwiftUI
 
 struct EpisodeCell: View {
     
+    @State var playVideo = false
+    @State var videoUrl = "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ElephantsDream.mp4"
     var episode : EpisodeDetailModel
     
+    
     var body: some View {
+        
         screenView().background(
         
             Rectangle()
                 .foregroundStyle(Color.gray.opacity(0.3))
         )
             .addBackground
+        
+            .fullScreenCover(isPresented: $playVideo, content: {
+                    
+                    VideoPlayerView(videoUrl: videoUrl){
+                        
+                        self.playVideo.toggle()
+                        
+                    }
+            })
     }
 }
 
@@ -31,20 +44,18 @@ extension EpisodeCell {
             Image(systemName: "chevron.right")
                 .foregroundStyle(Color.white)
             
-            EpisodePosterImage(url: episode.stillPath ?? "")
+            EpisodePosterImage(url: episode.stillPath ?? "").onTapGesture {
+                
+                self.playVideo.toggle()
+                
+            }
             
             episodeNameAndNumber
             
             Spacer()
             
-            Button{
-                
-            }label: {
-                
-                Image(systemName: "arrow.down.circle")
-                    .foregroundStyle(Color.white)
-                
-            }
+            downloadButton
+
             
         }.padding(.horizontal,10)
         .frame(height: 140)
@@ -59,6 +70,19 @@ extension EpisodeCell {
         
         Text(episode.name ?? "")
             .foregroundStyle(Color.white)
+        
+    }
+    
+    var downloadButton : some View {
+        
+        Button{
+            
+        }label: {
+            
+            Image(systemName: "arrow.down.circle")
+                .foregroundStyle(Color.white)
+            
+        }
         
     }
     

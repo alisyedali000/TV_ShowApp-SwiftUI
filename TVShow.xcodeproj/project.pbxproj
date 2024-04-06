@@ -30,6 +30,7 @@
 		01A497922BBF12A00015AD19 /* CircularButtonWithSubLine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01A497912BBF12A00015AD19 /* CircularButtonWithSubLine.swift */; };
 		01A497972BBF17D10015AD19 /* ExpandableText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01A497962BBF17D10015AD19 /* ExpandableText.swift */; };
 		01A4979A2BBF1BCF0015AD19 /* LoaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01A497992BBF1BCF0015AD19 /* LoaderView.swift */; };
+		01C511882BC0972500609129 /* VideoPlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01C511872BC0972500609129 /* VideoPlayerView.swift */; };
 		01D94F1E2BC0406400895DA1 /* SeasonsDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01D94F1D2BC0406400895DA1 /* SeasonsDetailView.swift */; };
 		01D94F212BC0655000895DA1 /* EpisodeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01D94F202BC0655000895DA1 /* EpisodeCell.swift */; };
 /* End PBXBuildFile section */
@@ -77,6 +78,7 @@
 		01A497912BBF12A00015AD19 /* CircularButtonWithSubLine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircularButtonWithSubLine.swift; sourceTree = "<group>"; };
 		01A497962BBF17D10015AD19 /* ExpandableText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpandableText.swift; sourceTree = "<group>"; };
 		01A497992BBF1BCF0015AD19 /* LoaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoaderView.swift; sourceTree = "<group>"; };
+		01C511872BC0972500609129 /* VideoPlayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoPlayerView.swift; sourceTree = "<group>"; };
 		01D94F1D2BC0406400895DA1 /* SeasonsDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeasonsDetailView.swift; sourceTree = "<group>"; };
 		01D94F202BC0655000895DA1 /* EpisodeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EpisodeCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -265,6 +267,7 @@
 		01A497802BBEF62E0015AD19 /* CustomViewsAndModifiers */ = {
 			isa = PBXGroup;
 			children = (
+				01C511842BC096C600609129 /* Player */,
 				01D94F1F2BC0650F00895DA1 /* EpisodeCell */,
 				01A497982BBF1BC00015AD19 /* Loader */,
 				01A497932BBF17A30015AD19 /* Text */,
@@ -314,6 +317,14 @@
 				01A497992BBF1BCF0015AD19 /* LoaderView.swift */,
 			);
 			path = Loader;
+			sourceTree = "<group>";
+		};
+		01C511842BC096C600609129 /* Player */ = {
+			isa = PBXGroup;
+			children = (
+				01C511872BC0972500609129 /* VideoPlayerView.swift */,
+			);
+			path = Player;
 			sourceTree = "<group>";
 		};
 		01D94F1F2BC0650F00895DA1 /* EpisodeCell */ = {
@@ -479,6 +490,7 @@
 				01A4979A2BBF1BCF0015AD19 /* LoaderView.swift in Sources */,
 				01A497892BBEFF990015AD19 /* Background.swift in Sources */,
 				016798782BBDA65A00E54077 /* TVShowViewModel.swift in Sources */,
+				01C511882BC0972500609129 /* VideoPlayerView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -648,8 +660,8 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -657,9 +669,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = ali.TVShow;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -677,8 +692,8 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -686,9 +701,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = ali.TVShow;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

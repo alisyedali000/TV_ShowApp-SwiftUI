@@ -10,8 +10,8 @@ import SwiftUI
 struct TVShow: View {
     
     @StateObject var vm = TVShowViewModel()
-    @State private var isExpanded = false
-    
+    @State var isExpanded = false
+    @State var playVideo = false
     var body: some View {
         ZStack{
             
@@ -23,8 +23,20 @@ struct TVShow: View {
         .task {
             
             await vm.getDetail(seriesID: 62852)
+            // Some series have season number 0 with an incorrect poster url for each episoode
+            // Try selecting another season for the show
             
         }
+        
+        .fullScreenCover(isPresented: $playVideo, content: {
+            
+            VideoPlayerView(videoUrl: "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ElephantsDream.mp4") {
+                
+                self.playVideo = false
+                
+            }
+            
+        })
     }
     
 }
@@ -110,9 +122,12 @@ extension TVShow{
             
             RectangularPlayButtons(title: "Play", bgColor: Color.orange, image: Image(systemName: "play.fill")) {
                 
+                self.playVideo.toggle()
             }
             
             RectangularPlayButtons(title: "Trailer", bgColor: Color.gray.opacity(0.5), image: Image(systemName: "play.rectangle")) {
+                
+                self.playVideo.toggle()
                 
             }
 
@@ -137,20 +152,6 @@ extension TVShow{
         }
         
     }
-    
-//    var overview : some View{
-//        
-//        let overview = (vm.tvShowDetail.overview ?? "")      .replacingOccurrences(of: "\\s+", with: " ", options: .regularExpression)
-//            
-//     
-//        
-//       return Text(overview)
-//            .font(.system(size: 16))
-//            .foregroundStyle(Color.white)
-//            .multilineTextAlignment(.leading)
-//            
-//        
-//    }
     
 }
 

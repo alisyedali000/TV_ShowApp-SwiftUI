@@ -76,22 +76,22 @@ extension SeasonsDetailView {
             HStack(spacing: 0) {
                 
                 ForEach(seasons, id: \.self) { season in
-                    
-                    seasonNumberCell(seasonNumber: season.seasonNumber ?? 0)
-                        .onTapGesture {
-                            
-                            withAnimation {
+                        
+                        seasonNumberCell(seasonNumber: season.seasonNumber ?? 0)
+                            .onTapGesture {
                                 
-                                selectedSeason = season.seasonNumber ?? 0
+                                withAnimation {
+                                    
+                                    selectedSeason = season.seasonNumber ?? 0
+                                }
+                                
                             }
+                        
+                        if season != seasons.last {
                             
-                        }
-                    
-                    if season != seasons.last {
-                        
-                        verticalDivider
-                            .offset(y: -6)
-                        
+                            verticalDivider
+                                .offset(y: -6)
+                            
                     }
                 }
             }

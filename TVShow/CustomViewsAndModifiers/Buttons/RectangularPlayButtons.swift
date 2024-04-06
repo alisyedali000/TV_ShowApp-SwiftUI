@@ -18,6 +18,8 @@ struct RectangularPlayButtons: View {
             
             Button{
                 
+                action()
+                
             }label: {
                 
                 RoundedRectangle(cornerRadius: 4)

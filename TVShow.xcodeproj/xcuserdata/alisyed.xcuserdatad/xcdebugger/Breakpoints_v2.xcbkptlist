@@ -190,5 +190,69 @@
             </Locations>
          </BreakpointContent>
       </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "47337CFA-10AC-4BC7-BD84-C48230D39665"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "TVShow/CustomViewsAndModifiers/DeviceOrientation/DeviceOrientation.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "27"
+            endingLineNumber = "27"
+            landmarkName = "set(orientation:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "523C333F-3B9A-4721-B401-E1902F76C0DE"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "TVShow/CustomViewsAndModifiers/DeviceOrientation/DeviceOrientation.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "25"
+            endingLineNumber = "25"
+            landmarkName = "set(orientation:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "523C333F-3B9A-4721-B401-E1902F76C0DE - 50e923dbdbb209c5"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "TVShow.DeviceOrientation.set(orientation: __C.UIInterfaceOrientationMask) -&gt; ()"
+                  moduleName = "TVShow"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/alisyed/Desktop/Ali%20Docs/TVShowDetail/TVShow/TVShow/CustomViewsAndModifiers/DeviceOrientation/DeviceOrientation.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "25"
+                  endingLineNumber = "25"
+                  offsetFromSymbolStart = "76">
+               </Location>
+               <Location
+                  uuid = "523C333F-3B9A-4721-B401-E1902F76C0DE - 9cd3c57e5609c9f5"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "implicit closure #1 (__C.UIInterfaceOrientationMask) -&gt; __C.UIWindowSceneGeometryPreferencesIOS in TVShow.DeviceOrientation.set(orientation: __C.UIInterfaceOrientationMask) -&gt; ()"
+                  moduleName = "TVShow"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/alisyed/Desktop/Ali%20Docs/TVShowDetail/TVShow/TVShow/CustomViewsAndModifiers/DeviceOrientation/DeviceOrientation.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "25"
+                  endingLineNumber = "25"
+                  offsetFromSymbolStart = "32">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
    </Breakpoints>
 </Bucket>

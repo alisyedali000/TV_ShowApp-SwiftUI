@@ -16,7 +16,7 @@ struct MainPosterImage: View {
 
         WebImage(url: URL(string: AppUrl.IMAGEURL + (url))!)
             .resizable()
-            .placeholder(Image(""))
+//            .placeholder(Image(""))
             .indicator(.activity)
             .scaledToFill()
             .frame(width: width, height: height)
@@ -49,7 +49,7 @@ struct EpisodePosterImage: View {
 
         WebImage(url: URL(string: AppUrl.IMAGEURL + (url))!)
             .resizable()
-            .placeholder(Image("placeholder.png"))
+//            .placeholder(Image(""))
             .indicator(.activity)
             .scaledToFill()
             .frame(width: width, height: height)
